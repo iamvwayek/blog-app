@@ -1,19 +1,14 @@
 import express from "express"
+import {config} from 'dotenv'
+
 import dbConnect from "./db/db.js";
 import Blog from "./model/blog.js";
 
 const app = express()
 const port = 4000;
 
+config()
 dbConnect()
-
-const result = await Blog.create({
-    title: "Title 01",
-    description: "Des...... 01"
-})
-
-console.log(result);
-
 
 app.get("/", (req,res)=>{
     res.send("hello from server")
