@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+/* tailwind css */
+
+.smooth-transition{
+    @apply transition-all duration-300 delay-50 ease-in-out;
+}
+
+html{
+    background-image: linear-gradient(to top, rgba(0, 255, 255, 0.626), rgba(255, 255, 255, 0.763));
+    /* color: whitesmoke; */
+    font-family: "Rubik",sans-serif;
+}
+
+/* create Blog css */
+input,textarea{
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: large;
+}
+
+label{
+    font-size: x-large;
+}
